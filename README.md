@@ -30,22 +30,12 @@ the Claude LLM (Large Language Model) and provides:
 pip install flask anthropic
 ```
 
-### 2. Set your API key
-```bash
-# Windows
-set ANTHROPIC_API_KEY=your_api_key_here
-
-# Mac/Linux
-export ANTHROPIC_API_KEY=your_api_key_here
-```
-> Get free API key at: https://console.anthropic.com
-
-### 3. Run the app
+### 2. Run the app
 ```bash
 python app.py
 ```
 
-### 4. Open browser
+### 3. Open browser
 ```
 http://localhost:5000
 ```
@@ -56,7 +46,7 @@ http://localhost:5000
 ```
 health_assistant/
 │
-├── app.py              ← Flask backend + Claude API
+├── app.py              ← Flask backend 
 ├── templates/
 │   └── index.html      ← Frontend UI
 └── README.md
@@ -66,7 +56,7 @@ health_assistant/
 
 ## 🎯 How It Works
 1. User enters symptoms, age, gender
-2. Flask sends data to Claude API with a medical prompt
+2. Flask sends data to APi with a medical prompt
 3. Claude returns structured JSON analysis
 4. Frontend renders the results beautifully
 
