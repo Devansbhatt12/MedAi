@@ -1,6 +1,5 @@
 """
 AI Health Assistant — Flask Backend
-Uses GROQ API (FREE) with Llama 3 model
 """
 
 from flask import Flask, render_template, request, jsonify
