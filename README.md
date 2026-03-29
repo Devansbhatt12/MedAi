@@ -18,7 +18,7 @@ the Claude LLM (Large Language Model) and provides:
 | Layer     | Technology            |
 |-----------|-----------------------|
 | Backend   | Python + Flask        |
-| AI / LLM  | Anthropic Claude API  |
+| AI / LLM  | Groq Api  |
 | Frontend  | HTML + CSS + JS       |
 
 ---
@@ -27,18 +27,9 @@ the Claude LLM (Large Language Model) and provides:
 
 ### 1. Install dependencies
 ```bash
-pip install flask anthropic
-```
+pip install requirements.txt```
 
 ### 2. Set your API key
-```bash
-# Windows
-set ANTHROPIC_API_KEY=your_api_key_here
-
-# Mac/Linux
-export ANTHROPIC_API_KEY=your_api_key_here
-```
-> Get free API key at: https://console.anthropic.com
 
 ### 3. Run the app
 ```bash
@@ -56,7 +47,7 @@ http://localhost:5000
 ```
 health_assistant/
 │
-├── app.py              ← Flask backend + Claude API
+├── app.py              ← Flask backend + Goq API
 ├── templates/
 │   └── index.html      ← Frontend UI
 └── README.md
@@ -66,7 +57,7 @@ health_assistant/
 
 ## 🎯 How It Works
 1. User enters symptoms, age, gender
-2. Flask sends data to Claude API with a medical prompt
+2. Flask sends data to Groq API with a medical prompt
 3. Claude returns structured JSON analysis
 4. Frontend renders the results beautifully
 
